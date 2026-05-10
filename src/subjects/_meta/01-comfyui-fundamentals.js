@@ -9,7 +9,7 @@ export default {
   prerequisites: [],
   estimatedHours: 6,
   difficulty: 'beginner',
-  status: 'stub',
+  status: 'published',
   chapters: [
     {
       id: 'c1-what-is-comfyui',
@@ -18,9 +18,9 @@ export default {
       difficulty: 'beginner',
       estimatedMinutes: 30,
       sections: [
-        { id: 's1-vs-a1111', title: 'ComfyUI vs A1111 vs Forge', difficulty: 'beginner', readingMinutes: 10, status: 'stub', description: 'When to choose each.' },
-        { id: 's2-why-graphs', title: 'Why Graphs Scale Better', difficulty: 'beginner', readingMinutes: 10, status: 'stub', description: 'Composability, reproducibility, branching.' },
-        { id: 's3-mental-model', title: 'The Mental Model', difficulty: 'beginner', readingMinutes: 10, status: 'stub', description: 'Tensors flow through nodes.' },
+        { id: 's1-vs-a1111', title: 'ComfyUI vs A1111 vs Forge', difficulty: 'beginner', readingMinutes: 10, status: 'published', description: 'When to choose each.' },
+        { id: 's2-why-graphs', title: 'Why Graphs Scale Better', difficulty: 'beginner', readingMinutes: 10, status: 'published', description: 'Composability, reproducibility, branching.' },
+        { id: 's3-mental-model', title: 'The Mental Model', difficulty: 'beginner', readingMinutes: 10, status: 'published', description: 'Tensors flow through nodes.' },
       ],
     },
     {
@@ -30,10 +30,10 @@ export default {
       difficulty: 'beginner',
       estimatedMinutes: 60,
       sections: [
-        { id: 's1-prerequisites', title: 'Prerequisites (Xcode CLT, Homebrew, Python)', difficulty: 'beginner', readingMinutes: 15, status: 'stub' },
-        { id: 's2-clone-and-venv', title: 'Clone ComfyUI and Create venv', difficulty: 'beginner', readingMinutes: 15, status: 'stub' },
-        { id: 's3-pytorch-mps', title: 'Installing PyTorch with MPS', difficulty: 'beginner', readingMinutes: 15, status: 'stub' },
-        { id: 's4-first-launch', title: 'First Launch and Smoke Test', difficulty: 'beginner', readingMinutes: 15, status: 'stub' },
+        { id: 's1-prerequisites', title: 'Prerequisites (Xcode CLT, Homebrew, Python)', difficulty: 'beginner', readingMinutes: 15, status: 'published' },
+        { id: 's2-clone-and-venv', title: 'Clone ComfyUI and Create venv', difficulty: 'beginner', readingMinutes: 15, status: 'published' },
+        { id: 's3-pytorch-mps', title: 'Installing PyTorch with MPS', difficulty: 'beginner', readingMinutes: 15, status: 'published' },
+        { id: 's4-first-launch', title: 'First Launch and Smoke Test', difficulty: 'beginner', readingMinutes: 15, status: 'published' },
       ],
     },
     {
@@ -43,10 +43,10 @@ export default {
       difficulty: 'beginner',
       estimatedMinutes: 45,
       sections: [
-        { id: 's1-canvas-and-nav', title: 'Canvas, Pan, Zoom, Selection', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's2-queue-and-history', title: 'Queue, History, Saved Workflows', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's3-groups-and-reroutes', title: 'Groups and Reroutes', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's4-keyboard-shortcuts', title: 'Keyboard Shortcuts', difficulty: 'beginner', readingMinutes: 15, status: 'stub' },
+        { id: 's1-canvas-and-nav', title: 'Canvas, Pan, Zoom, Selection', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's2-queue-and-history', title: 'Queue, History, Saved Workflows', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's3-groups-and-reroutes', title: 'Groups and Reroutes', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's4-keyboard-shortcuts', title: 'Keyboard Shortcuts', difficulty: 'beginner', readingMinutes: 15, status: 'published' },
       ],
     },
     {
@@ -56,9 +56,9 @@ export default {
       difficulty: 'beginner',
       estimatedMinutes: 40,
       sections: [
-        { id: 's1-inputs-outputs', title: 'Inputs, Outputs, Sockets', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's2-widgets', title: 'Widgets and Their Types', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's3-data-types', title: 'IMAGE / LATENT / MASK / MODEL / CLIP / VAE / CONDITIONING', difficulty: 'beginner', readingMinutes: 20, status: 'stub' },
+        { id: 's1-inputs-outputs', title: 'Inputs, Outputs, Sockets', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's2-widgets', title: 'Widgets and Their Types', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's3-data-types', title: 'IMAGE / LATENT / MASK / MODEL / CLIP / VAE / CONDITIONING', difficulty: 'beginner', readingMinutes: 20, status: 'published' },
       ],
     },
     {
@@ -68,11 +68,11 @@ export default {
       difficulty: 'beginner',
       estimatedMinutes: 60,
       sections: [
-        { id: 's1-load-checkpoint', title: 'Load Checkpoint', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's2-clip-text-encode', title: 'CLIP Text Encode (Prompt)', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's3-empty-latent', title: 'Empty Latent Image', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's4-ksampler', title: 'KSampler', difficulty: 'beginner', readingMinutes: 15, status: 'stub' },
-        { id: 's5-vae-decode-save', title: 'VAE Decode and Save', difficulty: 'beginner', readingMinutes: 15, status: 'stub' },
+        { id: 's1-load-checkpoint', title: 'Load Checkpoint', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's2-clip-text-encode', title: 'CLIP Text Encode (Prompt)', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's3-empty-latent', title: 'Empty Latent Image', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's4-ksampler', title: 'KSampler', difficulty: 'beginner', readingMinutes: 15, status: 'published' },
+        { id: 's5-vae-decode-save', title: 'VAE Decode and Save', difficulty: 'beginner', readingMinutes: 15, status: 'published' },
       ],
     },
     {
@@ -82,8 +82,8 @@ export default {
       difficulty: 'beginner',
       estimatedMinutes: 25,
       sections: [
-        { id: 's1-json-export', title: 'Export and Import JSON', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's2-png-metadata', title: 'Workflow Embedded in PNG', difficulty: 'beginner', readingMinutes: 15, status: 'stub' },
+        { id: 's1-json-export', title: 'Export and Import JSON', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's2-png-metadata', title: 'Workflow Embedded in PNG', difficulty: 'beginner', readingMinutes: 15, status: 'published' },
       ],
     },
     {
@@ -93,9 +93,9 @@ export default {
       difficulty: 'beginner',
       estimatedMinutes: 30,
       sections: [
-        { id: 's1-install-manager', title: 'Installing the Manager', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's2-installing-nodes', title: 'Installing Custom Nodes', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's3-pinning-versions', title: 'Pinning Versions, Avoiding Breakage', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
+        { id: 's1-install-manager', title: 'Installing the Manager', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's2-installing-nodes', title: 'Installing Custom Nodes', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's3-pinning-versions', title: 'Pinning Versions, Avoiding Breakage', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
       ],
     },
     {
@@ -105,8 +105,8 @@ export default {
       difficulty: 'beginner',
       estimatedMinutes: 25,
       sections: [
-        { id: 's1-models-tree', title: 'The models/ Tree', difficulty: 'beginner', readingMinutes: 10, status: 'stub' },
-        { id: 's2-shared-storage', title: 'Sharing Models Across Apps (extra_model_paths.yaml)', difficulty: 'beginner', readingMinutes: 15, status: 'stub' },
+        { id: 's1-models-tree', title: 'The models/ Tree', difficulty: 'beginner', readingMinutes: 10, status: 'published' },
+        { id: 's2-shared-storage', title: 'Sharing Models Across Apps (extra_model_paths.yaml)', difficulty: 'beginner', readingMinutes: 15, status: 'published' },
       ],
     },
   ],
