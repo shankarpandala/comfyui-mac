@@ -1,7 +1,7 @@
 const ch = (id, title, sections, mins = 40, diff = 'advanced') => ({
   id, title, difficulty: diff, estimatedMinutes: mins, description: '',
   sections: sections.map(([sid, t, m = 15]) => ({
-    id: sid, title: t, difficulty: diff, readingMinutes: m, status: 'stub',
+    id: sid, title: t, difficulty: diff, readingMinutes: m, status: 'published',
   })),
 })
 
@@ -15,7 +15,7 @@ export default {
   prerequisites: ['01-comfyui-fundamentals'],
   estimatedHours: 8,
   difficulty: 'advanced',
-  status: 'stub',
+  status: 'published',
   chapters: [
     ch('c1-forward-reverse', 'Forward and Reverse Diffusion (DDPM/DDIM)', [
       ['s1-ddpm', 'DDPM: Forward Noising'],
