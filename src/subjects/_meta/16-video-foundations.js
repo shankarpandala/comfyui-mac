@@ -1,4 +1,4 @@
-import { ch, subj } from './_helpers.js'
+import { chPub, subj } from './_helpers.js'
 
 export default subj({
   id: '16-video-foundations',
@@ -10,19 +10,20 @@ export default subj({
   prerequisites: ['03-diffusion-theory'],
   estimatedHours: 4,
   difficulty: 'advanced',
+  status: 'published',
   chapters: [
-    ch('c1-temporal-cons', 'Temporal Consistency', [
+    chPub('c1-temporal-cons', 'Temporal Consistency', [
       ['s1-flicker', 'Flicker, Drift, Identity Loss'],
       ['s2-optical-flow', 'Optical Flow Constraints'],
     ], 35),
-    ch('c2-3d-vaes', '3D Causal VAEs', [
+    chPub('c2-3d-vaes', '3D Causal VAEs', [
       ['s1-3d-vae-anatomy', '3D VAE Anatomy'],
       ['s2-frame-compression', 'Frame Compression Ratio'],
     ], 30, 'research'),
-    ch('c3-frame-packing', 'Frame Packing and Sliding Windows', [
+    chPub('c3-frame-packing', 'Frame Packing and Sliding Windows', [
       ['s1-windowing', 'Windowing for Long Outputs'],
     ], 25, 'advanced'),
-    ch('c4-vram-math', 'VRAM Math for 24 GB', [
+    chPub('c4-vram-math', 'VRAM Math for 24 GB', [
       ['s1-budget-table', 'Budget Table for Common Models'],
     ], 25),
   ],
