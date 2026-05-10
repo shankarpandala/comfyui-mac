@@ -1,4 +1,4 @@
-import { ch, subj } from './_helpers.js'
+import { chPub, subj } from './_helpers.js'
 
 export default subj({
   id: '35-llm-integration',
@@ -11,30 +11,31 @@ export default subj({
   prerequisites: ['01-comfyui-fundamentals', '04-quantization'],
   estimatedHours: 4,
   difficulty: 'intermediate',
+  status: 'published',
   chapters: [
-    ch('c1-options', 'Local LLM Options', [
+    chPub('c1-options', 'Local LLM Options', [
       ['s1-ollama', 'Ollama (gguf/llama.cpp on Mac)'],
       ['s2-mlx-lm', 'MLX-LM (Apple Native)'],
       ['s3-llamacpp', 'llama.cpp Server'],
       ['s4-openai-api-shim', 'OpenAI-Compatible API Shim'],
     ], 40),
-    ch('c2-models', 'Picking a Mac-Friendly LLM', [
+    chPub('c2-models', 'Picking a Mac-Friendly LLM', [
       ['s1-llama-3-8b', 'Llama-3.x 8B Instruct (Q4/Q5 on 24 GB)'],
       ['s2-qwen', 'Qwen 2.5 7B / 14B'],
       ['s3-deepseek', 'DeepSeek-R1 Distills'],
       ['s4-vision-models', 'Vision LLMs (Llava, Qwen-VL)'],
     ], 35),
-    ch('c3-comfy-nodes', 'LLM Nodes in ComfyUI', [
+    chPub('c3-comfy-nodes', 'LLM Nodes in ComfyUI', [
       ['s1-comfyui-llm', 'ComfyUI-Ollama / ComfyUI-LLM-Toolkit / ComfyUI-IF_AI'],
       ['s2-prompt-shape', 'Prompt-Shape Nodes (System / User / Schema)'],
       ['s3-tool-calls', 'Tool Calls and Structured Output'],
     ], 40),
-    ch('c4-prompt-eng', 'Prompt Engineering for Agents', [
+    chPub('c4-prompt-eng', 'Prompt Engineering for Agents', [
       ['s1-roles', 'System / User / Tool Roles'],
       ['s2-structured-out', 'JSON Schema / Pydantic-Style Output'],
       ['s3-fewshot', 'Few-Shot Patterns'],
     ], 35, 'advanced'),
-    ch('c5-mac-budget', 'Mac VRAM Budget for LLM + Image/Video', [
+    chPub('c5-mac-budget', 'Mac VRAM Budget for LLM + Image/Video', [
       ['s1-coexistence', 'LLM + Diffusion Coexistence'],
       ['s2-handoff', 'Sequential Handoff Pattern'],
     ], 25),
