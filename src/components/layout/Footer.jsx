@@ -8,6 +8,14 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-4">
           <a
+            href="https://www.pandala.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-800 dark:hover:text-zinc-200"
+          >
+            pandala.in
+          </a>
+          <a
             href="https://github.com/shankarpandala/comfyui-mac"
             target="_blank"
             rel="noopener noreferrer"

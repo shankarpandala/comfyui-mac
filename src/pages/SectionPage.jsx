@@ -1,10 +1,25 @@
 import { useParams } from 'react-router-dom'
-import { lazy, Suspense, useMemo } from 'react'
+import { lazy, Suspense } from 'react'
 import { getSubject, getChapter, getSection, getNextSection, getPrevSection } from '../utils/curriculum.js'
 import SectionLayout from '../components/content/SectionLayout.jsx'
 import useProgress from '../hooks/useProgress.js'
 
 const sectionModules = import.meta.glob('../subjects/[0-9]*/c*/s*.jsx')
+
+// Module-level cache so React.lazy components are stable across renders.
+// Calling lazy() inside the component (or inside useMemo) creates a fresh
+// lazy on each render, which breaks Suspense's resolved-promise caching
+// and shows a blank screen on first navigation until refresh.
+const lazyCache = new Map()
+function getLazyBody(subjectId, chapterId, sectionId) {
+  const path = `../subjects/${subjectId}/${chapterId}/${sectionId}.jsx`
+  const loader = sectionModules[path]
+  if (!loader) return null
+  if (!lazyCache.has(path)) {
+    lazyCache.set(path, lazy(loader))
+  }
+  return lazyCache.get(path)
+}
 
 function StubBody({ section }) {
   return (
@@ -31,17 +46,11 @@ export default function SectionPage() {
   const section = getSection(subjectId, chapterId, sectionId)
   const { markComplete, unmarkComplete, isComplete } = useProgress()
 
-  const Body = useMemo(() => {
-    if (!section || section.status === 'stub') return null
-    const path = `../subjects/${subjectId}/${chapterId}/${sectionId}.jsx`
-    const loader = sectionModules[path]
-    if (!loader) return null
-    return lazy(loader)
-  }, [subjectId, chapterId, sectionId, section])
-
   if (!subject || !chapter || !section) {
     return <div className="p-8 text-zinc-500">Section not found.</div>
   }
+
+  const Body = section.status === 'stub' ? null : getLazyBody(subjectId, chapterId, sectionId)
 
   const prev = getPrevSection(subjectId, chapterId, sectionId)
   const next = getNextSection(subjectId, chapterId, sectionId)
