@@ -29,11 +29,11 @@ function AppShell({ children }) {
         onToggleSidebar={() => setSidebarOpen((o) => !o)}
         sidebarOpen={sidebarOpen}
       />
-      <div className="flex flex-1">
-        <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
-        <main className="flex-1 min-w-0 lg:ml-[280px]">{children}</main>
+      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      <div className="flex-1 min-w-0 flex flex-col lg:ml-[280px]">
+        <main className="flex-1 min-w-0">{children}</main>
+        <Footer />
       </div>
-      <Footer />
     </div>
   )
 }
