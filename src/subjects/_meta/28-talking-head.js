@@ -1,4 +1,4 @@
-import { ch, subj } from './_helpers.js'
+import { chPub, subj } from './_helpers.js'
 
 export default subj({
   id: '28-talking-head',
@@ -10,23 +10,24 @@ export default subj({
   prerequisites: ['27-identity', '26-voice-cloning'],
   estimatedHours: 5,
   difficulty: 'research',
+  status: 'published',
   chapters: [
-    ch('c1-sonic', 'Sonic (Audio-Driven Portrait)', [
+    chPub('c1-sonic', 'Sonic (Audio-Driven Portrait)', [
       ['s1-sonic-recipe', 'Sonic Recipe'],
     ], 30),
-    ch('c2-hallo', 'Hallo / Hallo2 / Hallo3', [
+    chPub('c2-hallo', 'Hallo / Hallo2 / Hallo3', [
       ['s1-hallo', 'Hallo Versions'],
     ], 30),
-    ch('c3-echomimic', 'EchoMimic v2', [
+    chPub('c3-echomimic', 'EchoMimic v2', [
       ['s1-echomimic', 'EchoMimic v2 Recipe'],
     ], 25),
-    ch('c4-liveportrait', 'LivePortrait', [
+    chPub('c4-liveportrait', 'LivePortrait', [
       ['s1-liveportrait', 'Expression Transfer'],
     ], 30),
-    ch('c5-sadtalker', 'SadTalker (Mac-Friendly)', [
+    chPub('c5-sadtalker', 'SadTalker (Mac-Friendly)', [
       ['s1-sadtalker', 'SadTalker Setup'],
     ], 20),
-    ch('c6-wav2lip-musetalk', 'Wav2Lip / MuseTalk (Lip-Sync Only)', [
+    chPub('c6-wav2lip-musetalk', 'Wav2Lip / MuseTalk (Lip-Sync Only)', [
       ['s1-wav2lip', 'Wav2Lip'],
       ['s2-musetalk', 'MuseTalk'],
     ], 30),

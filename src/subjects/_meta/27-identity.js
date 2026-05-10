@@ -1,4 +1,4 @@
-import { ch, subj } from './_helpers.js'
+import { chPub, subj } from './_helpers.js'
 
 export default subj({
   id: '27-identity',
@@ -10,21 +10,22 @@ export default subj({
   prerequisites: ['10-ipadapter'],
   estimatedHours: 4,
   difficulty: 'advanced',
+  status: 'published',
   chapters: [
-    ch('c1-pulid', 'PuLID', [
+    chPub('c1-pulid', 'PuLID', [
       ['s1-pulid-overview', 'PuLID Overview'],
       ['s2-pulid-mac', 'PuLID on Mac (Recommended)'],
     ], 35),
-    ch('c2-instantid', 'InstantID', [
+    chPub('c2-instantid', 'InstantID', [
       ['s1-instantid', 'InstantID Recipe'],
     ], 25),
-    ch('c3-faceid-portrait', 'IP-Adapter FaceID Portrait', [
+    chPub('c3-faceid-portrait', 'IP-Adapter FaceID Portrait', [
       ['s1-portrait', 'FaceID Portrait Recipe'],
     ], 25),
-    ch('c4-reactor', 'ReActor (Post-Hoc Swap)', [
+    chPub('c4-reactor', 'ReActor (Post-Hoc Swap)', [
       ['s1-reactor', 'ReActor Workflow'],
     ], 20),
-    ch('c5-stack', 'Identity + Pose + Style Stack', [
+    chPub('c5-stack', 'Identity + Pose + Style Stack', [
       ['s1-full-stack', 'Full Stack Recipe'],
     ], 30, 'research'),
   ],
