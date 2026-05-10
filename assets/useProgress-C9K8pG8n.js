@@ -1,1 +1,0 @@
-import{u as t}from"./index-BnSci5Ig.js";function p(){const o=t(e=>e.markSectionComplete),r=t(e=>e.unmarkSectionComplete),s=t(e=>e.isComplete),m=t(e=>e.getSubjectProgress);return{markComplete:o,unmarkComplete:r,isComplete:s,getSubjectProgress:m}}export{p as u};
