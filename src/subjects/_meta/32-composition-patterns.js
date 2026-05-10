@@ -1,4 +1,4 @@
-import { ch, subj } from './_helpers.js'
+import { chPub, subj } from './_helpers.js'
 
 export default subj({
   id: '32-composition-patterns',
@@ -10,20 +10,21 @@ export default subj({
   prerequisites: ['01-comfyui-fundamentals'],
   estimatedHours: 3,
   difficulty: 'intermediate',
+  status: 'published',
   chapters: [
-    ch('c1-subworkflows', 'Sub-Workflows / Groups / Reroutes', [
+    chPub('c1-subworkflows', 'Sub-Workflows / Groups / Reroutes', [
       ['s1-grouping', 'Grouping Strategies'],
     ], 25),
-    ch('c2-wireless', 'Anything-Everywhere & Wireless Nodes', [
+    chPub('c2-wireless', 'Anything-Everywhere & Wireless Nodes', [
       ['s1-wireless', 'Wireless Patterns'],
     ], 25),
-    ch('c3-conditional', 'Conditional Branching', [
+    chPub('c3-conditional', 'Conditional Branching', [
       ['s1-impact-switches', 'Impact-Pack Switches'],
     ], 25, 'advanced'),
-    ch('c4-loops', 'Loops', [
+    chPub('c4-loops', 'Loops', [
       ['s1-iterative', 'Iterative (Impact-Pack)'],
     ], 25, 'advanced'),
-    ch('c5-templates', 'Reusable Templates', [
+    chPub('c5-templates', 'Reusable Templates', [
       ['s1-template-library', 'Template Library'],
     ], 20),
   ],

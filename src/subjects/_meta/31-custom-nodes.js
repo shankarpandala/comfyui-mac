@@ -1,4 +1,4 @@
-import { ch, subj } from './_helpers.js'
+import { chPub, subj } from './_helpers.js'
 
 export default subj({
   id: '31-custom-nodes',
@@ -10,20 +10,21 @@ export default subj({
   prerequisites: ['01-comfyui-fundamentals'],
   estimatedHours: 4,
   difficulty: 'advanced',
+  status: 'published',
   chapters: [
-    ch('c1-contract', 'The INPUT_TYPES Contract', [
+    chPub('c1-contract', 'The INPUT_TYPES Contract', [
       ['s1-contract', 'INPUT_TYPES, RETURN_TYPES, FUNCTION'],
     ], 30),
-    ch('c2-first-node', 'Your First Node', [
+    chPub('c2-first-node', 'Your First Node', [
       ['s1-10-line-example', '10-Line Example'],
     ], 25),
-    ch('c3-tensor-io', 'Tensor I/O', [
+    chPub('c3-tensor-io', 'Tensor I/O', [
       ['s1-image-latent-mask', 'IMAGE / LATENT / MASK Conventions'],
     ], 30, 'advanced'),
-    ch('c4-frontend-widgets', 'Frontend Widgets', [
+    chPub('c4-frontend-widgets', 'Frontend Widgets', [
       ['s1-number-combo', 'Number, Combo, Image Preview'],
     ], 25, 'advanced'),
-    ch('c5-publishing', 'Publishing', [
+    chPub('c5-publishing', 'Publishing', [
       ['s1-comfy-registry', 'Publishing to Comfy Registry'],
     ], 20),
   ],

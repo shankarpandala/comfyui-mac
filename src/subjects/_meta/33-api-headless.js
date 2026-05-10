@@ -1,4 +1,4 @@
-import { ch, subj } from './_helpers.js'
+import { chPub, subj } from './_helpers.js'
 
 export default subj({
   id: '33-api-headless',
@@ -10,17 +10,18 @@ export default subj({
   prerequisites: ['01-comfyui-fundamentals'],
   estimatedHours: 3,
   difficulty: 'advanced',
+  status: 'published',
   chapters: [
-    ch('c1-server', 'ComfyUI as a Server', [
+    chPub('c1-server', 'ComfyUI as a Server', [
       ['s1-prompt-endpoint', '/prompt /queue /history Endpoints'],
     ], 25),
-    ch('c2-python-client', 'Python Client', [
+    chPub('c2-python-client', 'Python Client', [
       ['s1-client-pattern', 'Client Pattern'],
     ], 30),
-    ch('c3-launchd', 'macOS launchd Triggers', [
+    chPub('c3-launchd', 'macOS launchd Triggers', [
       ['s1-folder-watch', 'Folder Watch + Cron'],
     ], 25),
-    ch('c4-cluster', 'Multi-Mac Cluster', [
+    chPub('c4-cluster', 'Multi-Mac Cluster', [
       ['s1-mac-mini-cluster', 'Mac-mini Cluster Patterns'],
     ], 25, 'research'),
   ],
