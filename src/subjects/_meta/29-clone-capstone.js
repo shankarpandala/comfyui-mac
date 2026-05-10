@@ -1,4 +1,4 @@
-import { ch, subj } from './_helpers.js'
+import { chPub, subj } from './_helpers.js'
 
 export default subj({
   id: '29-clone-capstone',
@@ -11,30 +11,31 @@ export default subj({
   prerequisites: ['12-lora-training', '26-voice-cloning', '27-identity', '28-talking-head'],
   estimatedHours: 12,
   difficulty: 'research',
+  status: 'published',
   chapters: [
-    ch('c1-pipeline-overview', 'Pipeline Overview', [
+    chPub('c1-pipeline-overview', 'Pipeline Overview', [
       ['s1-end-to-end', 'End-to-End Diagram'],
     ], 20),
-    ch('c2-capture', 'Capturing Yourself', [
+    chPub('c2-capture', 'Capturing Yourself', [
       ['s1-protocol', 'Phone-Camera Capture Protocol'],
       ['s2-lighting', 'Lighting Plan'],
       ['s3-expressions', 'Expression Variety'],
     ], 45),
-    ch('c3-train-self-lora', 'Train a Self LoRA', [
+    chPub('c3-train-self-lora', 'Train a Self LoRA', [
       ['s1-sdxl-lora', 'SDXL LoRA of Yourself'],
       ['s2-flux-lora', 'FLUX LoRA of Yourself'],
     ], 60, 'research'),
-    ch('c4-pulid-stack', 'Combine with PuLID', [
+    chPub('c4-pulid-stack', 'Combine with PuLID', [
       ['s1-stronger-id', 'Stronger Identity Preservation'],
     ], 25),
-    ch('c5-animate', 'Animate the Still', [
+    chPub('c5-animate', 'Animate the Still', [
       ['s1-liveportrait-sonic', 'LivePortrait + Sonic'],
     ], 35, 'research'),
-    ch('c6-voice-clone', 'Voice-Clone Yourself', [
+    chPub('c6-voice-clone', 'Voice-Clone Yourself', [
       ['s1-f5-tts', 'F5-TTS Self-Clone'],
       ['s2-rvc', 'RVC Self-Clone'],
     ], 40),
-    ch('c7-script-to-video', 'Script-to-Video End-to-End', [
+    chPub('c7-script-to-video', 'Script-to-Video End-to-End', [
       ['s1-pipeline', 'Pipeline: Script → TTS → Talk → Upscale → Export'],
       ['s2-9-16-export', '9:16 Reels/Shorts Export'],
     ], 45, 'research'),
