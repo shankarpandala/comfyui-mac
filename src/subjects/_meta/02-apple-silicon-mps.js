@@ -9,7 +9,7 @@ export default {
   prerequisites: ['01-comfyui-fundamentals'],
   estimatedHours: 8,
   difficulty: 'intermediate',
-  status: 'stub',
+  status: 'published',
   chapters: [
     {
       id: 'c1-apple-silicon-arch',
@@ -18,9 +18,9 @@ export default {
       difficulty: 'intermediate',
       estimatedMinutes: 45,
       sections: [
-        { id: 's1-m5-pro-overview', title: 'M5 Pro Chip Overview', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
-        { id: 's2-unified-memory', title: 'Unified Memory and the 24 GB Budget', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
-        { id: 's3-neural-engine', title: 'Neural Engine vs GPU Cores', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
+        { id: 's1-m5-pro-overview', title: 'M5 Pro Chip Overview', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
+        { id: 's2-unified-memory', title: 'Unified Memory and the 24 GB Budget', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
+        { id: 's3-neural-engine', title: 'Neural Engine vs GPU Cores', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
       ],
     },
     {
@@ -30,9 +30,9 @@ export default {
       difficulty: 'intermediate',
       estimatedMinutes: 45,
       sections: [
-        { id: 's1-mps-overview', title: 'MPS Backend Overview', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
-        { id: 's2-supported-ops', title: 'Supported Operations Matrix', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
-        { id: 's3-cpu-fallback', title: 'PYTORCH_ENABLE_MPS_FALLBACK Behavior', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
+        { id: 's1-mps-overview', title: 'MPS Backend Overview', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
+        { id: 's2-supported-ops', title: 'Supported Operations Matrix', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
+        { id: 's3-cpu-fallback', title: 'PYTORCH_ENABLE_MPS_FALLBACK Behavior', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
       ],
     },
     {
@@ -42,9 +42,9 @@ export default {
       difficulty: 'intermediate',
       estimatedMinutes: 50,
       sections: [
-        { id: 's1-the-dtype-matrix', title: 'The Dtype Matrix (fp32/fp16/bf16/fp8/int8 × MPS/CUDA/CPU)', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
-        { id: 's2-why-fp8-fails', title: 'Why fp8 Fails on MPS', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
-        { id: 's3-substitution-table', title: 'fp8 → bf16 / fp16 / GGUF Substitution Table', difficulty: 'intermediate', readingMinutes: 20, status: 'stub' },
+        { id: 's1-the-dtype-matrix', title: 'The Dtype Matrix (fp32/fp16/bf16/fp8/int8 × MPS/CUDA/CPU)', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
+        { id: 's2-why-fp8-fails', title: 'Why fp8 Fails on MPS', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
+        { id: 's3-substitution-table', title: 'fp8 → bf16 / fp16 / GGUF Substitution Table', difficulty: 'intermediate', readingMinutes: 20, status: 'published' },
       ],
     },
     {
@@ -54,8 +54,8 @@ export default {
       difficulty: 'intermediate',
       estimatedMinutes: 30,
       sections: [
-        { id: 's1-essential-flags', title: 'Essential Mac Launch Flags', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
-        { id: 's2-when-to-use-each', title: 'When to Use Each Flag', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
+        { id: 's1-essential-flags', title: 'Essential Mac Launch Flags', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
+        { id: 's2-when-to-use-each', title: 'When to Use Each Flag', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
       ],
     },
     {
@@ -65,9 +65,9 @@ export default {
       difficulty: 'intermediate',
       estimatedMinutes: 45,
       sections: [
-        { id: 's1-high-watermark', title: 'PYTORCH_MPS_HIGH_WATERMARK_RATIO', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
-        { id: 's2-lowvram-modes', title: 'lowvram / novram / cpu offload', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
-        { id: 's3-swap-discipline', title: 'Swap and OS Pressure', difficulty: 'intermediate', readingMinutes: 15, status: 'stub' },
+        { id: 's1-high-watermark', title: 'PYTORCH_MPS_HIGH_WATERMARK_RATIO', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
+        { id: 's2-lowvram-modes', title: 'lowvram / novram / cpu offload', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
+        { id: 's3-swap-discipline', title: 'Swap and OS Pressure', difficulty: 'intermediate', readingMinutes: 15, status: 'published' },
       ],
     },
     {
@@ -77,9 +77,9 @@ export default {
       difficulty: 'intermediate',
       estimatedMinutes: 30,
       sections: [
-        { id: 's1-activity-monitor', title: 'Activity Monitor Reading', difficulty: 'intermediate', readingMinutes: 10, status: 'stub' },
-        { id: 's2-mactop-asitop', title: 'mactop and asitop', difficulty: 'intermediate', readingMinutes: 10, status: 'stub' },
-        { id: 's3-comfy-logs', title: 'Reading ComfyUI Logs', difficulty: 'intermediate', readingMinutes: 10, status: 'stub' },
+        { id: 's1-activity-monitor', title: 'Activity Monitor Reading', difficulty: 'intermediate', readingMinutes: 10, status: 'published' },
+        { id: 's2-mactop-asitop', title: 'mactop and asitop', difficulty: 'intermediate', readingMinutes: 10, status: 'published' },
+        { id: 's3-comfy-logs', title: 'Reading ComfyUI Logs', difficulty: 'intermediate', readingMinutes: 10, status: 'published' },
       ],
     },
     {
@@ -89,8 +89,8 @@ export default {
       difficulty: 'advanced',
       estimatedMinutes: 30,
       sections: [
-        { id: 's1-mlx-overview', title: 'What MLX Is', difficulty: 'advanced', readingMinutes: 10, status: 'stub' },
-        { id: 's2-mlx-comfy-bridges', title: 'MLX/Comfy Bridges and Limits', difficulty: 'advanced', readingMinutes: 20, status: 'stub' },
+        { id: 's1-mlx-overview', title: 'What MLX Is', difficulty: 'advanced', readingMinutes: 10, status: 'published' },
+        { id: 's2-mlx-comfy-bridges', title: 'MLX/Comfy Bridges and Limits', difficulty: 'advanced', readingMinutes: 20, status: 'published' },
       ],
     },
     {
@@ -100,8 +100,8 @@ export default {
       difficulty: 'advanced',
       estimatedMinutes: 30,
       sections: [
-        { id: 's1-cuda-only-kernels', title: 'CUDA-Only Kernels and Why They Skip', difficulty: 'advanced', readingMinutes: 15, status: 'stub' },
-        { id: 's2-mac-alternatives', title: 'Mac Alternatives and PyTorch SDPA', difficulty: 'advanced', readingMinutes: 15, status: 'stub' },
+        { id: 's1-cuda-only-kernels', title: 'CUDA-Only Kernels and Why They Skip', difficulty: 'advanced', readingMinutes: 15, status: 'published' },
+        { id: 's2-mac-alternatives', title: 'Mac Alternatives and PyTorch SDPA', difficulty: 'advanced', readingMinutes: 15, status: 'published' },
       ],
     },
     {
@@ -111,8 +111,8 @@ export default {
       difficulty: 'intermediate',
       estimatedMinutes: 30,
       sections: [
-        { id: 's1-bench-method', title: 'Benchmark Methodology', difficulty: 'intermediate', readingMinutes: 10, status: 'stub' },
-        { id: 's2-reference-table', title: 'M5 Pro Reference Numbers', difficulty: 'intermediate', readingMinutes: 20, status: 'stub' },
+        { id: 's1-bench-method', title: 'Benchmark Methodology', difficulty: 'intermediate', readingMinutes: 10, status: 'published' },
+        { id: 's2-reference-table', title: 'M5 Pro Reference Numbers', difficulty: 'intermediate', readingMinutes: 20, status: 'published' },
       ],
     },
   ],
