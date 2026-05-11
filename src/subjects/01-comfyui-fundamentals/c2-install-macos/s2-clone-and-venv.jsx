@@ -5,13 +5,17 @@ export default function S2CloneAndVenv() {
   return (
     <>
       <p>
-        We will install ComfyUI as a self-contained directory. Pick a parent folder you don't mind
-        living with for years — <code>~/AI</code> or <code>~/comfy</code> work well. Avoid Documents,
-        Desktop, or any iCloud-synced folder; iCloud will fight you over the model files.
+        We will install ComfyUI as a self-contained directory at{' '}
+        <code>~/Documents/ComfyUI</code> — the conventional macOS location used by every other
+        lesson in this curriculum. One caveat: if iCloud Drive is syncing your Documents folder,
+        either turn that off (System Settings → Apple ID → iCloud → iCloud Drive → Documents) or
+        right-click <code>~/Documents/ComfyUI</code> after cloning and choose{' '}
+        <em>Remove Download</em> → <em>Keep on this Mac</em>. iCloud will otherwise evict model
+        weights as "not recently used" and break workflows.
       </p>
 
       <h2>1 — Clone the repo</h2>
-      <CommandBlock command="cd ~ && mkdir -p AI && cd AI" />
+      <CommandBlock command="cd ~/Documents" />
       <CommandBlock command="git clone https://github.com/comfyanonymous/ComfyUI.git" />
       <CommandBlock command="cd ComfyUI" />
 

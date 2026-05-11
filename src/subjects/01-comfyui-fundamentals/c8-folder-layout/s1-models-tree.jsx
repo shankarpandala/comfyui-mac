@@ -56,10 +56,12 @@ export default function S1ModelsTree() {
       </p>
 
       <MacGotchaBlock title="iCloud Drive will eat your models">
-        Do not place <code>~/Documents/ComfyUI/models/</code> inside iCloud Drive (Documents, Desktop). iCloud
-        keeps removing files locally to "free space" and replacing them with placeholders, which
-        makes ComfyUI report missing models. Keep <code>models/</code> on plain local disk or an
-        external SSD that is not iCloud-synced.
+        On macOS, <code>~/Documents</code> is iCloud-synced by default. iCloud keeps removing
+        files locally to "free space" and replaces them with placeholders, which makes ComfyUI
+        report missing models. Either disable iCloud Drive sync for the Documents folder (System
+        Settings → Apple ID → iCloud → iCloud Drive → Documents), right-click{' '}
+        <code>~/Documents/ComfyUI</code> and choose <em>Keep on this Mac</em>, or symlink{' '}
+        <code>models/</code> out to an external SSD that is not iCloud-synced.
       </MacGotchaBlock>
 
       <h2>External SSD — symlink the models folder</h2>
