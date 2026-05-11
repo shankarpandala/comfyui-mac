@@ -5,13 +5,17 @@ export default function S2CloneAndVenv() {
   return (
     <>
       <p>
-        We will install ComfyUI as a self-contained directory. Pick a parent folder you don't mind
-        living with for years — <code>~/AI</code> or <code>~/comfy</code> work well. Avoid Documents,
-        Desktop, or any iCloud-synced folder; iCloud will fight you over the model files.
+        We will install ComfyUI as a self-contained directory at{' '}
+        <code>~/Documents/ComfyUI</code> — the conventional macOS location used by every other
+        lesson in this curriculum. One caveat: if iCloud Drive is syncing your Documents folder,
+        either turn that off (System Settings → Apple ID → iCloud → iCloud Drive → Documents) or
+        right-click <code>~/Documents/ComfyUI</code> after cloning and choose{' '}
+        <em>Remove Download</em> → <em>Keep on this Mac</em>. iCloud will otherwise evict model
+        weights as "not recently used" and break workflows.
       </p>
 
       <h2>1 — Clone the repo</h2>
-      <CommandBlock command="cd ~ && mkdir -p AI && cd AI" />
+      <CommandBlock command="cd ~/Documents" />
       <CommandBlock command="git clone https://github.com/comfyanonymous/ComfyUI.git" />
       <CommandBlock command="cd ComfyUI" />
 
@@ -26,7 +30,7 @@ export default function S2CloneAndVenv() {
 
       <NoteBlock title="Activating the venv on every new terminal">
         The venv is not a permanent shell modification — opening a new terminal puts you back in the
-        global Python. Always run <code>source ~/AI/ComfyUI/venv/bin/activate</code> first. We'll
+        global Python. Always run <code>source ~/Documents/ComfyUI/venv/bin/activate</code> first. We'll
         add a launch script in section 4 to make this one command.
       </NoteBlock>
 
@@ -35,7 +39,7 @@ export default function S2CloneAndVenv() {
 
       <h2>4 — Where the directory will end up</h2>
       <p>After this section your tree looks like:</p>
-      <pre>{`~/AI/ComfyUI/
+      <pre>{`~/Documents/ComfyUI/
 ├── venv/                # the Python virtual environment
 ├── main.py              # the entry point we'll launch in section 4
 ├── nodes.py             # the built-in node implementations

@@ -13,7 +13,7 @@ export default function S4FirstLaunch() {
       </p>
 
       <h2>1 — Launch flags that matter on Mac</h2>
-      <p>From the activated venv, in <code>~/AI/ComfyUI</code>:</p>
+      <p>From the activated venv, in <code>~/Documents/ComfyUI</code>:</p>
       <CommandBlock
         command="PYTORCH_ENABLE_MPS_FALLBACK=1 python main.py --force-fp16"
         label="First launch"
@@ -45,7 +45,7 @@ export default function S4FirstLaunch() {
 
       <h2>4 — A launch script</h2>
       <p>
-        Typing the full command every time is tedious. Save this as <code>~/AI/ComfyUI/start.sh</code>{' '}
+        Typing the full command every time is tedious. Save this as <code>~/Documents/ComfyUI/start.sh</code>{' '}
         and <code>chmod +x</code> it:
       </p>
       <pre>{`#!/usr/bin/env bash
@@ -56,9 +56,9 @@ export PYTORCH_ENABLE_MPS_FALLBACK=1
 export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0
 python main.py --force-fp16 "$@"`}</pre>
       <p>Now you can launch with:</p>
-      <CommandBlock command="~/AI/ComfyUI/start.sh" />
+      <CommandBlock command="~/Documents/ComfyUI/start.sh" />
       <p>And pass extra flags through:</p>
-      <CommandBlock command="~/AI/ComfyUI/start.sh --listen 0.0.0.0" />
+      <CommandBlock command="~/Documents/ComfyUI/start.sh --listen 0.0.0.0" />
 
       <NoteBlock title="What's PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0?">
         It removes PyTorch's safety cap on MPS memory allocation. On a unified-memory system this is

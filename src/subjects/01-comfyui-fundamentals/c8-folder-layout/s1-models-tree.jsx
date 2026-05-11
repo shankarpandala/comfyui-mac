@@ -56,10 +56,12 @@ export default function S1ModelsTree() {
       </p>
 
       <MacGotchaBlock title="iCloud Drive will eat your models">
-        Do not place <code>~/AI/ComfyUI/models/</code> inside iCloud Drive (Documents, Desktop). iCloud
-        keeps removing files locally to "free space" and replacing them with placeholders, which
-        makes ComfyUI report missing models. Keep <code>models/</code> on plain local disk or an
-        external SSD that is not iCloud-synced.
+        On macOS, <code>~/Documents</code> is iCloud-synced by default. iCloud keeps removing
+        files locally to "free space" and replaces them with placeholders, which makes ComfyUI
+        report missing models. Either disable iCloud Drive sync for the Documents folder (System
+        Settings → Apple ID → iCloud → iCloud Drive → Documents), right-click{' '}
+        <code>~/Documents/ComfyUI</code> and choose <em>Keep on this Mac</em>, or symlink{' '}
+        <code>models/</code> out to an external SSD that is not iCloud-synced.
       </MacGotchaBlock>
 
       <h2>External SSD — symlink the models folder</h2>
@@ -67,8 +69,8 @@ export default function S1ModelsTree() {
         24 GB unified memory and 200+ GB of models is a real disk constraint on a laptop. You can
         keep models on an external SSD and symlink them into ComfyUI:
       </p>
-      <pre>{`mv ~/AI/ComfyUI/models /Volumes/ExternalSSD/comfy-models
-ln -s /Volumes/ExternalSSD/comfy-models ~/AI/ComfyUI/models`}</pre>
+      <pre>{`mv ~/Documents/ComfyUI/models /Volumes/ExternalSSD/comfy-models
+ln -s /Volumes/ExternalSSD/comfy-models ~/Documents/ComfyUI/models`}</pre>
       <p>
         Trade-off: model loads are slower over USB-C/Thunderbolt (a 23 GB FLUX load goes from ~3 s to
         ~10 s on a TB3 SSD). Worth it for the disk savings; we cover the alternative — sharing models

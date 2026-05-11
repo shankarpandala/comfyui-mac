@@ -18,7 +18,7 @@ export default function S2SharedStorage() {
       </p>
 
       <h2>Example file</h2>
-      <p>Save the following as <code>~/AI/ComfyUI/extra_model_paths.yaml</code>:</p>
+      <p>Save the following as <code>~/Documents/ComfyUI/extra_model_paths.yaml</code>:</p>
       <pre>{`a1111:
     base_path: /Users/you/AI/stable-diffusion-webui
 

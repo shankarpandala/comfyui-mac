@@ -24,7 +24,7 @@ export default function S3PinningVersions() {
         Every custom node is a git repo. To pin a known-good version: open a terminal, navigate to
         the package, check out a specific commit.
       </p>
-      <CommandBlock command="cd ~/AI/ComfyUI/custom_nodes/ComfyUI-Impact-Pack" />
+      <CommandBlock command="cd ~/Documents/ComfyUI/custom_nodes/ComfyUI-Impact-Pack" />
       <CommandBlock command="git log --oneline -10" label="See recent commits" />
       <CommandBlock command="git checkout <commit-sha>" />
       <p>
@@ -36,7 +36,7 @@ export default function S3PinningVersions() {
       <p>If <strong>Update All</strong> broke something:</p>
       <ol>
         <li>Identify the broken package from the ComfyUI startup log (the failing import names it).</li>
-        <li><code>cd ~/AI/ComfyUI/custom_nodes/&lt;package&gt;</code></li>
+        <li><code>cd ~/Documents/ComfyUI/custom_nodes/&lt;package&gt;</code></li>
         <li><code>git log --oneline -20</code> to find a recent good commit.</li>
         <li><code>git checkout &lt;sha&gt;</code></li>
         <li>Restart ComfyUI.</li>

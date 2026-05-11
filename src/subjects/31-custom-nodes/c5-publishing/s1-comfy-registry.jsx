@@ -38,7 +38,7 @@ Icon = ""`}</pre>
       <p>
         Skip Registry; just publish on GitHub. Users install with:
       </p>
-      <pre>{`cd ~/AI/ComfyUI/custom_nodes
+      <pre>{`cd ~/Documents/ComfyUI/custom_nodes
 git clone https://github.com/yourname/your-node-pack`}</pre>
 
       <h2>Testing before publishing</h2>

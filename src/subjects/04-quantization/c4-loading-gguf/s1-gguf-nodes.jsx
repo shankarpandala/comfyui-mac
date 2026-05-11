@@ -20,7 +20,7 @@ export default function S1GgufNodes() {
       </ol>
 
       <p>Or manually:</p>
-      <CommandBlock command="cd ~/AI/ComfyUI/custom_nodes && git clone https://github.com/city96/ComfyUI-GGUF" />
+      <CommandBlock command="cd ~/Documents/ComfyUI/custom_nodes && git clone https://github.com/city96/ComfyUI-GGUF" />
       <CommandBlock command="cd ComfyUI-GGUF && pip install -r requirements.txt" label="From the activated venv" />
 
       <h2>The three loader nodes</h2>

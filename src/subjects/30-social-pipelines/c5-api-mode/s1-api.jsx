@@ -11,7 +11,7 @@ export default function S1Api() {
       </p>
 
       <h2>Launching as a server</h2>
-      <CommandBlock command="~/AI/ComfyUI/start.sh --listen 0.0.0.0 --port 8188" />
+      <CommandBlock command="~/Documents/ComfyUI/start.sh --listen 0.0.0.0 --port 8188" />
 
       <h2>The /prompt endpoint</h2>
       <CommandBlock command={`curl -X POST http://localhost:8188/prompt -H "Content-Type: application/json" -d @workflow_api.json`} label="Submit a workflow" />

@@ -19,7 +19,7 @@ export default function S1Hashes() {
       </ul>
 
       <h2>Computing a hash on Mac</h2>
-      <CommandBlock command="shasum -a 256 ~/AI/ComfyUI/models/checkpoints/sd_xl_base_1.0.safetensors" />
+      <CommandBlock command="shasum -a 256 ~/Documents/ComfyUI/models/checkpoints/sd_xl_base_1.0.safetensors" />
       <p>For a 6.7 GB SDXL file this takes 15–30 seconds (read-bound on disk).</p>
 
       <h2>Where to compare</h2>
@@ -38,7 +38,7 @@ export default function S1Hashes() {
 
       <h2>A simple Mac hashing routine</h2>
       <p>For new models, hash on download:</p>
-      <CommandBlock command="cd ~/AI/ComfyUI/models/checkpoints && shasum -a 256 *.safetensors > hashes.txt" />
+      <CommandBlock command="cd ~/Documents/ComfyUI/models/checkpoints && shasum -a 256 *.safetensors > hashes.txt" />
       <p>Then later you can verify nothing changed:</p>
       <CommandBlock command="shasum -a 256 -c hashes.txt" />
 

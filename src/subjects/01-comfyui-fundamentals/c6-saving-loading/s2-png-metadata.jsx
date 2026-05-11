@@ -12,7 +12,7 @@ export default function S2PngMetadata() {
 
       <h2>Try it</h2>
       <ol>
-        <li>Open the PNG you generated in chapter 5 from <code>~/AI/ComfyUI/output/</code>.</li>
+        <li>Open the PNG you generated in chapter 5 from <code>~/Documents/ComfyUI/output/</code>.</li>
         <li>Drag the file onto the ComfyUI canvas.</li>
         <li>The full graph loads — including widget values, group colors, sticky notes.</li>
       </ol>
@@ -22,7 +22,7 @@ export default function S2PngMetadata() {
         ComfyUI writes two PNG <code>tEXt</code> chunks: <code>workflow</code> (the workflow JSON)
         and <code>prompt</code> (the API-format JSON). You can inspect them on the command line:
       </p>
-      <CommandBlock command="exiftool ~/AI/ComfyUI/output/first-workflow_00001_.png" />
+      <CommandBlock command="exiftool ~/Documents/ComfyUI/output/first-workflow_00001_.png" />
       <p>
         (Install exiftool with <code>brew install exiftool</code>.) You'll see the embedded JSON in
         the output.
