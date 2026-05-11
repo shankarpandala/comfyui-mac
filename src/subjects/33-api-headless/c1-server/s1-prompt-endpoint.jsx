@@ -7,7 +7,7 @@ export default function S1PromptEndpoint() {
       <p>ComfyUI's HTTP API. Submit workflows; poll for results. Foundation for headless / agentic / scheduled production.</p>
 
       <h2>Launching as a server</h2>
-      <CommandBlock command="~/AI/ComfyUI/start.sh --listen 0.0.0.0 --port 8188" />
+      <CommandBlock command="~/Documents/ComfyUI/start.sh --listen 0.0.0.0 --port 8188" />
 
       <h2>The endpoints</h2>
       <table>

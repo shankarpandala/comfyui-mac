@@ -12,7 +12,7 @@ export default function S1LoadCheckpoint() {
 
       <h2>1 — Get a model file</h2>
       <p>For our first workflow we'll use SD1.5 — small (~2 GB), fast, and battle-tested. From a terminal:</p>
-      <CommandBlock command="cd ~/AI/ComfyUI/models/checkpoints" />
+      <CommandBlock command="cd ~/Documents/ComfyUI/models/checkpoints" />
       <CommandBlock
         command="curl -L -o v1-5-pruned-emaonly.safetensors https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors"
         label="Download SD1.5 checkpoint (~4 GB)"

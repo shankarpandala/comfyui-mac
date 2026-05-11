@@ -26,7 +26,7 @@ export default function S2CloneAndVenv() {
 
       <NoteBlock title="Activating the venv on every new terminal">
         The venv is not a permanent shell modification — opening a new terminal puts you back in the
-        global Python. Always run <code>source ~/AI/ComfyUI/venv/bin/activate</code> first. We'll
+        global Python. Always run <code>source ~/Documents/ComfyUI/venv/bin/activate</code> first. We'll
         add a launch script in section 4 to make this one command.
       </NoteBlock>
 
@@ -35,7 +35,7 @@ export default function S2CloneAndVenv() {
 
       <h2>4 — Where the directory will end up</h2>
       <p>After this section your tree looks like:</p>
-      <pre>{`~/AI/ComfyUI/
+      <pre>{`~/Documents/ComfyUI/
 ├── venv/                # the Python virtual environment
 ├── main.py              # the entry point we'll launch in section 4
 ├── nodes.py             # the built-in node implementations

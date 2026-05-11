@@ -7,7 +7,7 @@ export default function S110LineExample() {
       <p>Build your first useful custom node — a "Random Choice" string picker. ~15 lines, 5 minutes.</p>
 
       <h2>Setup</h2>
-      <CommandBlock command="cd ~/AI/ComfyUI/custom_nodes && mkdir my-first-node && cd my-first-node" />
+      <CommandBlock command="cd ~/Documents/ComfyUI/custom_nodes && mkdir my-first-node && cd my-first-node" />
 
       <h2>The file: <code>__init__.py</code></h2>
       <pre>{`import random

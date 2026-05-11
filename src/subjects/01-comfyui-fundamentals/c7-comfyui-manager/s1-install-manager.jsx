@@ -12,12 +12,12 @@ export default function S1InstallManager() {
 
       <h2>Install</h2>
       <p>From a terminal with ComfyUI <strong>not</strong> running:</p>
-      <CommandBlock command="cd ~/AI/ComfyUI/custom_nodes" />
+      <CommandBlock command="cd ~/Documents/ComfyUI/custom_nodes" />
       <CommandBlock command="git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager" />
       <p>That's it for the install. ComfyUI Manager has no extra Python dependencies.</p>
 
       <h2>Restart ComfyUI</h2>
-      <CommandBlock command="~/AI/ComfyUI/start.sh" label="Use the script we wrote in chapter 2 / section 4" />
+      <CommandBlock command="~/Documents/ComfyUI/start.sh" label="Use the script we wrote in chapter 2 / section 4" />
       <p>Watch the logs as it boots — you should see <code>### Loading: ComfyUI-Manager (V&lt;version&gt;)</code>.</p>
 
       <h2>The Manager button</h2>

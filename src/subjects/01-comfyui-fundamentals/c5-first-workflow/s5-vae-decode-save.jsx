@@ -22,7 +22,7 @@ export default function S5VaeDecodeSave() {
       <ul>
         <li><code>filename_prefix</code>: <code>first-workflow</code> (or anything you like).</li>
       </ul>
-      <p>Files land in <code>~/AI/ComfyUI/output/</code> as <code>first-workflow_00001_.png</code>, <code>_00002_</code>, etc.</p>
+      <p>Files land in <code>~/Documents/ComfyUI/output/</code> as <code>first-workflow_00001_.png</code>, <code>_00002_</code>, etc.</p>
 
       <h2>3 — The complete graph</h2>
       <pre>{`CheckpointLoader ─MODEL─→ KSampler
